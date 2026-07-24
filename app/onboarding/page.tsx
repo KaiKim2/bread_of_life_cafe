@@ -30,8 +30,9 @@ export default function OnboardingPage() {
     >
       <div
         style={{
-          width: "100%",
+          width: "92%",
           maxWidth: "700px",
+          margin: "0 auto",
           background: "rgba(255,255,255,.72)",
           backdropFilter: "blur(22px)",
           borderRadius: "32px",
