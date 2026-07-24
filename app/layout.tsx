@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
     default: "Bread",
-    template: "%s | Bread"
+    template: "%s | Bread",
   },
   description:
     "A restaurant-inspired Bible experience serving Scripture, prayer, encouragement, and hope.",
@@ -15,16 +15,21 @@ export const metadata: Metadata = {
     "Scripture",
     "Prayer",
     "Faith",
-    "Bread"
+    "Bread",
   ],
   authors: [
     {
-      name: "Anonymous Kai"
-    }
+      name: "Anonymous Kai",
+    },
   ],
   creator: "Anonymous Kai",
   applicationName: "Bread",
-  metadataBase: new URL("http://localhost:3000")
+  metadataBase: new URL("https://bread-of-life-cafe-sxhi.vercel.app"),
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
