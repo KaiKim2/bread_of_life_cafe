@@ -36,7 +36,7 @@ export default function OnboardingPage() {
           background: "rgba(255,255,255,.72)",
           backdropFilter: "blur(22px)",
           borderRadius: "32px",
-          padding: "64px",
+          padding: "clamp(24px, 5vw, 64px)",
           boxShadow: "0 30px 80px rgba(71,50,20,.15)",
           border: "1px solid rgba(255,255,255,.6)",
           textAlign: "center",
@@ -44,7 +44,7 @@ export default function OnboardingPage() {
       >
         <div
           style={{
-            fontSize: "70px",
+            fontSize: "clamp(48px, 12vw, 70px)",
             marginBottom: "20px",
           }}
         >
@@ -53,7 +53,7 @@ export default function OnboardingPage() {
 
         <h1
           style={{
-            fontSize: "3.5rem",
+            fontSize: "clamp(2.2rem, 8vw, 3.5rem)",
             fontWeight: 800,
             lineHeight: 1.15,
             marginBottom: "18px",
@@ -67,7 +67,7 @@ export default function OnboardingPage() {
 
         <p
           style={{
-            fontSize: "1.2rem",
+            fontSize: "clamp(1rem, 4vw, 1.2rem)",
             lineHeight: 1.9,
             color: "#6c5640",
             maxWidth: "560px",
