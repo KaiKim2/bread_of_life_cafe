@@ -124,9 +124,12 @@ export default function NeedsPage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+            gridTemplateColumns: "1fr",
+            justifyItems: "center",
             gap: "18px",
-            marginBottom: "45px",
+            width: "100%",
+            maxWidth: "420px",
+            margin: "0 auto 45px",
           }}
         >
           {needs.map((need) => (
@@ -134,6 +137,8 @@ export default function NeedsPage() {
               key={need}
               onClick={() => setSelected(need)}
               style={{
+                width: "100%",
+                maxWidth: "420px",
                 padding: "20px",
                 borderRadius: "20px",
                 cursor: "pointer",
